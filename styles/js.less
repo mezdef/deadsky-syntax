@@ -1,0 +1,32 @@
+@import "syntax-variables";
+
+.js {
+  .entity {
+    &.name {
+      &.function {
+        // color: @gray-3;
+        color: @blue-5;
+      }
+    }
+  }
+  .method-call {
+    .function {
+      &.entity {
+        &.name {
+          color: @gray-1;
+        }
+      }
+    }
+  }
+  .var {
+    color: @gray-2;
+  }
+  .brace {
+    &.round {
+      color: @gray-5;
+    }
+    &.curly {
+      color: @gray-5;
+    }
+  }
+}

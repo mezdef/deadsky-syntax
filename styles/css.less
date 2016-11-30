@@ -1,0 +1,57 @@
+@import "syntax-variables";
+
+.css {
+  .entity.other.attribute-name {
+    // color: @gray-0;
+  }
+  .entity.other.mixin {
+    color: @blue-5;
+  }
+
+  .entity {
+    &.tag {
+      color: @gray-0;
+    }
+    &.id {
+      color: @gray-3;
+    }
+    &.class {
+      color: @gray-1;
+    }
+    &.pseudo-element, &.pseudo-class {
+      color: @blue-7;
+    }
+  }
+
+  .keyword {
+    &.control {
+      color: @gray-1;
+      &.at-rule {
+        color: @blue-5;
+      }
+    }
+    &.other {
+      &.unit {
+        color: @gray-1;
+      }
+    }
+  }
+
+  .function {
+    &.support {
+      color: @gray-2;
+    }
+  }
+
+  .brace {
+    &.round {
+      color: @gray-5;
+    }
+  }
+}
+
+// .vim-mode.command-mode:not(.mini).is-focused .cursor.blink-off {
+//   background-color: @cyan;
+//   color: @very-dark-gray;
+//   opacity: 1;
+// }
